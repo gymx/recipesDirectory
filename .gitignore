@@ -4,6 +4,7 @@
 # ignore log files and temp files
 /log/*.log
 /tmp/**/*
+/db/development.sqlite3
 
 
 # Windows image file caches
