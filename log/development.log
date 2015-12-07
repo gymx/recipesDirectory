@@ -10102,3 +10102,1598 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 14:16:57
 
 
 Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 14:16:57 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddRoleToUsersTable (20151207214334)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddRoleToUsersTable (20151207214334)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (20.0ms)[0m  [1mALTER TABLE "users" ADD "role" varchar(255)[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151207214334"]]
+  [1m[36m (65.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mUser Load (4.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:10:57 -0700
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 313ms (Views: 313.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:10:58 -0700
+
+
+Started GET "/login" for 127.0.0.1 at 2015-12-07 15:10:59 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"iITptHrHQ159/WQ8PiXQ6j1yqG4OLaGBv22lquPo6mY="}
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 286ms (Views: 285.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:11:00 -0700
+
+
+Started POST "/login" for 127.0.0.1 at 2015-12-07 15:11:07 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iITptHrHQ159/WQ8PiXQ6j1yqG4OLaGBv22lquPo6mY=", "session"=>{"email"=>"testuser1@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'testuser1@example.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 97ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:11:07 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 284ms (Views: 282.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:11:08 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 297ms (Views: 296.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:13:19 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 283ms (Views: 283.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:13:20 -0700
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/logout" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iITptHrHQ159/WQ8PiXQ6j1yqG4OLaGBv22lquPo6mY="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 283ms (Views: 282.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:41 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:14:41 -0700
+
+
+Started GET "/login" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"iITptHrHQ159/WQ8PiXQ6j1yqG4OLaGBv22lquPo6mY="}
+  Rendered sessions/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 292ms (Views: 291.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:14:42 -0700
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-12-07 15:14:56 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 301ms (Views: 300.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-12-07 15:14:56 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 285ms (Views: 284.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:14:57 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2015-12-07 15:15:14 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iITptHrHQ159/WQ8PiXQ6j1yqG4OLaGBv22lquPo6mY=", "user"=>{"first_name"=>"Admin", "last_name"=>"Administrator", "email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2015-12-07 22:15:14.649752"], ["email", "admin@example.com"], ["first_name", "Admin"], ["last_name", "Administrator"], ["password_digest", "$2a$10$CkxwOIdLqltwmUkpCIkXLegXXtaah8de.cPtNn16bE5Gd1Sm2mzN2"], ["updated_at", "2015-12-07 22:15:14.649752"]]
+  [1m[36m (56.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 150ms (ActiveRecord: 57.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:15:14 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 280ms (Views: 280.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:15:15 -0700
+
+
+Started GET "/login" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"iITptHrHQ159/WQ8PiXQ6j1yqG4OLaGBv22lquPo6mY="}
+  Rendered sessions/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 292ms (Views: 290.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:19 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:15:19 -0700
+
+
+Started POST "/login" for 127.0.0.1 at 2015-12-07 15:15:24 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iITptHrHQ159/WQ8PiXQ6j1yqG4OLaGBv22lquPo6mY=", "session"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'admin@example.com' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 87ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 285ms (Views: 284.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:15:25 -0700
+  [1m[36mUser Load (15.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (15.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  UPDATE "users" SET "role" = ?, "updated_at" = ? WHERE "users"."id" = 3  [["role", "Admin"], ["updated_at", "2015-12-07 22:19:44.857655"]]
+  [1m[36m (93.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+
+
+Started GET "/logout" for 127.0.0.1 at 2015-12-07 15:20:12 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iITptHrHQ159/WQ8PiXQ6j1yqG4OLaGBv22lquPo6mY="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:20:12 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 280ms (Views: 278.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:20:13 -0700
+
+
+Started GET "/login" for 127.0.0.1 at 2015-12-07 15:20:14 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"iITptHrHQ159/WQ8PiXQ6j1yqG4OLaGBv22lquPo6mY="}
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 285ms (Views: 284.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:14 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:14 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:20:14 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:14 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:20:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:20:15 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:15 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:15 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:15 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:15 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:15 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:15 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:15 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:15 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:15 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:15 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:15 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:20:15 -0700
+
+
+Started POST "/login" for 127.0.0.1 at 2015-12-07 15:20:29 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iITptHrHQ159/WQ8PiXQ6j1yqG4OLaGBv22lquPo6mY=", "session"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'admin@example.com' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 98ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:20:29 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 277ms (Views: 276.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:20:30 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:21:58 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `admin?' for #<#<Class:0x8006b50>:0x8948eb0>):
+    2: 	<div class="col-md-10 col-md-offset-1">
+    3: 		<h1 class="jumbotron text-center">Recipes Directory</h1>
+    4: 		<h3>All types of recipes for all types of occasions.</h3>
+    5: 		<% if admin? %>
+    6: 			<h3>Administrator logged in</h3>
+    7: 		<% end %>
+    8: 	</div>
+  app/views/pages/home.html.erb:5:in `_app_views_pages_home_html_erb__216624862_71966544'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (79.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:22:37 -0700
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered pages/home.html.erb within layouts/application (11.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 299ms (Views: 299.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:22:38 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:27:23 -0700
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered pages/home.html.erb within layouts/application (11.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 506ms (Views: 503.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:27:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 342ms (Views: 341.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:27:27 -0700
+
+
+Started GET "/about" for 127.0.0.1 at 2015-12-07 15:27:28 -0700
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Completed 200 OK in 343ms (Views: 343.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:27:29 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:27:32 -0700
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Completed 200 OK in 354ms (Views: 353.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:27:33 -0700
+
+
+Started GET "/logout" for 127.0.0.1 at 2015-12-07 15:27:35 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iITptHrHQ159/WQ8PiXQ6j1yqG4OLaGBv22lquPo6mY="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:27:35 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `admin?' for nil:NilClass):
+    2: 	<div class="col-md-10 col-md-offset-1">
+    3: 		<h1 class="jumbotron text-center">Recipes Directory</h1>
+    4: 		<h3>All types of recipes for all types of occasions.</h3>
+    5: 		<% if current_user.admin? %>
+    6: 			<h3>Administrator logged in</h3>
+    7: 		<% end %>
+    8: 	</div>
+  app/views/pages/home.html.erb:5:in `_app_views_pages_home_html_erb__216624862_15530028'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:29:04 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 343ms (Views: 343.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:29:05 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 15:44:30 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 349ms (Views: 349.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:44:31 -0700
+
+
+Started GET "/about" for 127.0.0.1 at 2015-12-07 15:44:33 -0700
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 350ms (Views: 349.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:33 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-07 15:44:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-07 15:44:33 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:33 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-12-07 15:44:33 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:33 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:33 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:33 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:34 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:34 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:34 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:34 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:34 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:34 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:34 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-07 15:44:34 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2015-12-07 15:44:34 -0700
