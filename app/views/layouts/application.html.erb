@@ -23,7 +23,14 @@
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <div class="nav navbar-nav navbar-right">
-          <%= link_to "Sign In", "/login", class: "btn btn-primary navbar-btn", method: :get %>
+        <% if current_user %>
+          <%= link_to "Sign Out", "/logout", class: "btn btn-primary navbar-btn", method: :get %>
+        <% else %>
+         <%= link_to "Sign In", "/login", class: "btn btn-success navbar-btn", method: :get %>
+        <% end %>
+
+
+
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "About", "/about" %></li>
