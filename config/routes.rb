@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  resources :recipes
+
+  get 'about' => 'recipes#about'
+
+  
   root 'recipes#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
