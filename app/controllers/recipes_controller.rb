@@ -6,7 +6,7 @@ class RecipesController < ApplicationController
   end
 
 	def index
-		@recipes = Recipe.find
+		@recipes = Recipe.all
 	end
 
 	def create
@@ -26,6 +26,7 @@ class RecipesController < ApplicationController
 	end
 
 	def show
+		@recipe = Recipe.find(params[:id])
 	end
 
 	def update

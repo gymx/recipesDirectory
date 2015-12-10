@@ -1,1 +1,17 @@
-<h1>Index - list all the recipes in the DB</h1>
+<h1>Recipe List</h1>
+<table class='table table-striped table-condensed'>
+	<tr>
+		<th>Title</th>
+		<th>Course</th>
+		<th>Main Ingredient</th>
+		<th></th>
+	</tr>
+	<% @recipes.each do |r| %>
+		<tr>
+			<td><%= link_to r.title, recipe_path(r.id) %></td>
+			<td><%= r.course %></td>
+			<td><%= r.main_ingredient %></td>
+			<td><%= link_to "Edit", edit_recipe_path(r.id) %></td>
+		</tr>
+	<% end %>
+
