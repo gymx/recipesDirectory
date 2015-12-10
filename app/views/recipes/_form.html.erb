@@ -1,0 +1,39 @@
+			<%= form_for @recipe do |f| %>
+				<div class="form-group">
+					<%= f.text_field :title, placeholder: 'Recipe Title', class: 'form-control' %>
+					<%= f.text_field :description, placeholder: 'Describe the recipe', class: 'form-control' %>
+				</div>
+				<div class='form-group'>
+					<div class="input-group">
+						<div class="input-group-addon">Course</div>
+						<%= f.select :course, options_for_select(['Main', 'Appetizer', 'Side', 'Dessert', 'Sauce', 'Component']), {}, {	class: 'form-control'} %>
+					</div>
+				</div>
+				<div class="form-group">
+					<%= f.text_field :main_ingredient, placeholder: 'Main Ingredient', class: 'form-control' %>
+					<%= f.text_area :ingredients, placeholder: 'Ingredient List', class: 'form-control' %>
+					<%= f.text_area :directions, placeholder: 'Directions', class: 'form-control' %>
+				</div>
+				<div class="form-group">
+					<%= f.label "Recipe Times" %>
+					<div class="input-group">
+						<div class="col-md-4">
+							<%= f.text_field :prep_time, placeholder: 'prep time', class: 'form-control' %>
+						</div>
+						<div class="col-md-4">
+							<%= f.text_field :cook_time, placeholder: 'cooking time', class: 'form-control' %>
+						</div>
+						<div class="col-md-4">
+							<%= f.text_field :total_time, placeholder: 'total time', class: 'form-control' %>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<%= f.text_field :servings, placeholder: 'Number of servings', class: 'form-control' %>
+					<%= f.url_field :source, placeholder: 'Source of this recipe', class: 'form-control' %>
+				</div>
+				<div class="form-group">
+					<%= f.submit 'Save', class: 'form-control btn-success'%>
+				</div>
+			
+			<% end %>
