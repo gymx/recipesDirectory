@@ -15,6 +15,7 @@ class RecipesController < ApplicationController
 		if @recipe.save
 			redirect_to @recipe
 		else
+			flash[:warning] = "Recipe save failed"
 			redirect_to new_recipe_path
 		end
 	end
@@ -46,6 +47,15 @@ class RecipesController < ApplicationController
 		flash[:success] = "#{@recipe.title} - was deleted successfully"
 		redirect_to recipes_path	# back to the list
 
+	end
+
+	def course
+		@recipes = Recipe.where("course = ?", params[:course])
+		#render plain: @recipes
+		unless !@recipes.blank?
+			flash[:warning] = "No #{params[:course]} recipes found"
+			redirect_to root_path
+		end
 	end
 
 	private

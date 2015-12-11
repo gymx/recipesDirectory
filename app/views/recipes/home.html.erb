@@ -3,7 +3,22 @@
 	<p>Everything in one place everywhere.</p>
 </div>
 <div class="row">
-	<div class="col-md-6 col-md-offset-3">
-		<%= link_to "Mains", "#" %>
+	<div class="col-md-4" id="Main">
+		<%= link_to "Main Dish Recipes", controller: "recipes", action: "course", course: "Main" %>
+	</div>
+	<div class="col-md-4" id="Appetizer">
+		<%= link_to "Appetizer Recipes", controller: "recipes", action: "course", course: "Appetizer" %>
+	</div>
+	<div class="col-md-4" id="Side">
+		<%= link_to "Side Dish Recipes", controller: "recipes", action: "course", course: "Side" %>
+	</div>
+	<div class="col-md-4" id="Dessert">
+		<%= link_to "Dessert Recipes", controller: "recipes", action: "course", course: "Dessert" %>
+	</div>
+	<div class="col-md-4" id="Sauce">
+		<%= link_to "Sauce Recipes", controller: "recipes", action: "course", course: "Sauce" %>
+	</div>
+	<div class="col-md-4" id="Component">
+		<%= link_to "Component Recipes", controller: "recipes", action: "course", course: "Component" %>
 	</div>
 </div>

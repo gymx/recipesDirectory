@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   resources :recipes
 
+  get 'course' => 'recipes#course'
+
   get 'about' => 'recipes#about'
 
   

@@ -35,13 +35,16 @@
         </div><!--/.nav-collapse -->
       </div><!--/.container-fluid -->
     </nav>
+  </div> <!-- container -->
 
+  <div class="container">
     <% flash.each do |key, value| %>
       <%= content_tag :div, value, class: "alert alert-#{key}" %>
     <% end %>
-    
-		<%= yield %>
+  </div>
 
-	</div> <!-- container -->
+  <div class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>
