@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   resources :recipes
 
+  get 'nav_search' => 'recipes#nav_search'
   get 'course' => 'recipes#course'
 
   get 'about' => 'recipes#about'
