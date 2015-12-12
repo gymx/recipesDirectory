@@ -2,17 +2,21 @@
 <table class='table table-striped table-condensed'>
 	<tr>
 		<th>Title</th>
+		<th colspan="2">Actions</th>
 		<th>Course</th>
 		<th>Main Ingredient</th>
-		<th colspan="2">Actions</th>
 	</tr>
 	<% @recipes.each do |r| %>
 		<tr>
-			<td><%= link_to r.title, recipe_path(r.id) %></td>
+			<td><%= link_to r.title, recipe_path(r.id), class: "btn btn-default btn-xs btn-block" %></td>
+			<td><%= link_to "Edit", edit_recipe_path(r.id) %></td>
+			<td>
+				<%= link_to recipe_path(r.id), :class => "btn btn-primary btn-xs", :method => :delete, data: { :confirm => "Are you sure?" } do %>
+					<span class="glyphicon glyphicon-trash"></span>
+				<% end %>
+			</td>
 			<td><%= r.course %></td>
 			<td><%= r.main_ingredient %></td>
-			<td><%= link_to "Edit", edit_recipe_path(r.id) %></td>
-			<td><%= link_to "Delete", recipe_path(r.id), :method => :delete, data: {:confirm => "Are you sure ?"} %></td>
 		</tr>
 	<% end %>
 
