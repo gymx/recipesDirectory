@@ -11,7 +11,7 @@ class RecipesController < ApplicationController
 		if params[:query].present?
 			@recipes = Recipe.search(params[:query])
 			if !@recipes.present?
-				flash[:warning] = "No recipes found"
+				flash[:warning] = "#{params[:query]} not found!"
 				redirect_to :back
 			end
 		else
