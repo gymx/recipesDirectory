@@ -19,23 +19,6 @@ class RecipesController < ApplicationController
 		end
 	end
 
-
-# index action responsive to search queries - could be used for keyword nav search
-#  as well as course search from homepage
-#	def index
-#		if params[:query].present?
-#			@recipes = Recipe.search(params[:query])
-#			if !@recipes.present?
-#				flash[:warning] = "No recipes found"
-#				redirect_to :back
-#			end
-#		else
-#			@recipes =  Recipe.all
-#		end
-#	end
-
-
-# working index action - but not responsive to search parameters
 	def index
 		@recipes = Recipe.all
 	end
