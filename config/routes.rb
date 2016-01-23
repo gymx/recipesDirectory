@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
 
+  root 'recipes#home'
+  get 'users/new'
+  get 'nav_search' => 'recipes#nav_search'
+  get 'course'     => 'recipes#course'
+  get 'about'      => 'recipes#about'
+
   resources :recipes
 
-  get 'nav_search' => 'recipes#nav_search'
-  get 'course' => 'recipes#course'
 
-  get 'about' => 'recipes#about'
 
   
-  root 'recipes#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
