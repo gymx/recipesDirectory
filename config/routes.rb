@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'about'      => 'recipes#about'
 
   resources :recipes
+  resources :users
 
 
 

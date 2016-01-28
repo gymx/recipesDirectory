@@ -2,23 +2,23 @@
 	<h1><%= icon('cutlery') %> Your Recipes</h1>
 	<p>Everything in one place everywhere.</p>
 </div>
-<div class="row">
+<div class="row home_menu">
 	<div class="col-md-4 col-sm-6" id="Main">
-		<%= link_to "Main Dish Recipes", controller: "recipes", action: "course", course: "Main" %>
+		<%= link_to image_tag("Main", class: "img-responsive") + '<span class="glyphicon glyphicon-fire"></span>'.html_safe + " Main Dish Recipes", controller: "recipes", action: "course", course: "Main" %>
 	</div>
 	<div class="col-md-4 col-sm-6" id="Appetizer">
-		<%= link_to "Appetizer Recipes", controller: "recipes", action: "course", course: "Appetizer" %>
+		<%= link_to image_tag("Appetizer", class: "img-responsive") + "Appetizer Recipes", controller: "recipes", action: "course", course: "Appetizer" %>
 	</div>
 	<div class="col-md-4 col-sm-6" id="Side">
-		<%= link_to "Side Dish Recipes", controller: "recipes", action: "course", course: "Side" %>
+		<%= link_to image_tag("Side", class: "img-responsive") + '<span class="glyphicon glyphicon-hand-right"></span>'.html_safe  + " Side Dish Recipes", controller: "recipes", action: "course", course: "Side" %>
 	</div>
 	<div class="col-md-4 col-sm-6" id="Dessert">
-		<span class="glyphicon glyphicon-ice-lolly"></span><%= link_to " Dessert Recipes", controller: "recipes", action: "course", course: "Dessert" %>
+		<%= link_to image_tag("Dessert", class: "img-responsive") + '<span class="glyphicon glyphicon-ice-lolly-tasted"></span>'.html_safe + " Dessert Recipes", controller: "recipes", action: "course", course: "Dessert" %>
 	</div>
 	<div class="col-md-4 col-sm-6" id="Sauce">
-		<%= link_to "Sauce Recipes", controller: "recipes", action: "course", course: "Sauce" %>
+		<%= link_to image_tag("Sauce", class: "img-responsive") + "Sauce Recipes", controller: "recipes", action: "course", course: "Sauce" %>
 	</div>
 	<div class="col-md-4 col-sm-6" id="Component">
-		<%= link_to "Component Recipes", controller: "recipes", action: "course", course: "Component" %>
+		<%= link_to image_tag("Component", class: "img-responsive") + '<span class="glyphicon glyphicon-leaf"></span>'.html_safe  + " Component Recipes", controller: "recipes", action: "course", course: "Component" %>
 	</div>
 </div>
